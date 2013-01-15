@@ -9,7 +9,7 @@ This repo is in Chinese (Simplified) ONLY. Sorry for the inconvience.
 ------------------------
 130116 - 121216 （前半：本发布版制作日期，后半：Raspbian原版制作日期）
 
-下载地址：上传中
+所有版本下载地址：http://pan.baidu.com/share/link?shareid=228066&uk=153758759
 
 功能
 ------------------------
@@ -48,7 +48,6 @@ This repo is in Chinese (Simplified) ONLY. Sorry for the inconvience.
 ------------------------
 * `construct.sh`：构建脚本。（推荐手工执行）
 * `autoconfig.ini`：缩减了的`raspi-autoconfig`配置文件。
-* `release-download`目录：每个发布版本的下载地址。（可能由于修复而更改）
 * `release-checksum`目录：每个发布版本的SHA1验证文件。（不允许变动）
 * `xdelta-tools-win32`目录：制作增量补丁的相关工具。  
   （Win32下使用。做出的xdelta补丁可跨平台。同时提供Win32下的打补丁软件）
