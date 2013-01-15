@@ -37,8 +37,12 @@ This repo is in Chinese (Simplified) ONLY. Sorry for the inconvience.
 
 ### 开机运行
 
-1. 使用新的`.img`系统镜像文件刷卡开机。
-2. 使用新的
+1. 如果您使用有线网和DHCP自动IP，则无需任何更改。  
+   如果您使用有线网和静态IP，请更改`autoconfig.ini`中的`[Wired]`部分。  
+   如果您使用无线网络，请更改`autoconfig.ini`中的`[Wireless]`部分。  
+2. 使用新的`.img`系统镜像文件刷卡开机。
+3. 开机后会自动执行扩大分区和网络配置操作，会自动重启一次。
+4. 重启后进入您指定的图形或命令行界面，无须再使用raspi-config进行配置。
 
 内容说明
 ------------------------
@@ -46,6 +50,8 @@ This repo is in Chinese (Simplified) ONLY. Sorry for the inconvience.
 * `autoconfig.ini`：缩减了的`raspi-autoconfig`配置文件。
 * `release-download`目录：每个发布版本的下载地址。（可能由于修复而更改）
 * `release-checksum`目录：每个发布版本的SHA1验证文件。（不允许变动）
+* `xdelta-tools-win32`目录：制作增量补丁的相关工具。  
+  （Win32下使用。做出的xdelta补丁可跨平台。同时提供Win32下的打补丁软件）
 
 构建步骤
 ------------------------
